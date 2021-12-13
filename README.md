@@ -1,5 +1,4 @@
-# Barcode-Holder
 ## Privacy Policy
 Data is not collected from this app.
 ## Support
-Contact through email: quality15matters@gmail.com
+Feel free to contact through email: quality15matters@gmail.com if you have any questions.
