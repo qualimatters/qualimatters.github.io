@@ -3,22 +3,58 @@
 <head>
   <meta charset="utf-8">
   <title>條碼夾</title>
+<style>
+body { margin: 0px; }
+nav {
+    box-shadow:
+      0 0 1px 1px rgba(29,17,51,.04),
+      0 0 3px 2px rgba(9,32,77,.12),
+      0 0 2px -3px rgba(29,17,51,.12);
+    padding: 16px/*0|16|16*/ 24px/*24|64|96*/;
+}
+nav img {
+    width: 32px; border-radius: 22.5%;
+    float: left;
+}
+nav ul {
+    list-style: none;
+    margin: 0px;
+    padding-left: 16px; /* padding 32px among items */
+    display: flex;
+}
+nav ul li {
+    display: flex;
+    min-height: 32px; /* according to logo height */
+    align-items: center;
+    padding: 0 16px;
+}
+</style>
 </head>
 <body>
   <nav>
-    <ul id="anchor">
+    <img src="/barcodes holder.svg">
+    <ul>
       <li><a href="#policy">隱私權政策</a></li>
       <li><a href="#support">App 支援</a></li>
       <li><a href="./en.html">English</a></li>
     </ul>
   </nav>
-  <h1>條碼夾 -- 產品資訊</h1>
-  <h2 id="policy">隱私權政策</h2>
-  <p>此 App 不收集資料。</p>
-  <h2 id="support">App 支援</h2>
-  <p>
-    若您有任何疑問，請來信:
-    <a href="mailto:quality15matters@gmail.com">quality15matters@gmail.com</a>
-  </p>
+
+  <main style="text-slign: center">
+    <h1>條碼夾 -- 產品資訊</h1>
+    <h2 id="policy">隱私權政策</h2>
+    <p>此 App 不收集資料。</p>
+    <h2 id="support">App 支援</h2>
+    <p>
+      若您有任何疑問，請來信:
+      <a href="mailto:quality15matters@gmail.com">
+        quality15matters@gmail.com
+      </a>
+    </p>
+  </main>
+
+  <footer>
+    © 2022 QualityIsMatters
+  </footer>
 </body>
 </html>
