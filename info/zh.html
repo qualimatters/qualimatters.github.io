@@ -8,8 +8,8 @@
 /* fill page */
 body { margin: 0 auto; max-width: 800px; }
 
-/* default font color */
-body { color: #1d1d1f; }
+/* default font */
+body { color: #1d1d1f; font-family: "PingFang TC",sans-serif; }
 
 /* sticky header */
 header { position: sticky; top: 0; background-color: rgba(255,255,255,0.9); }
@@ -23,6 +23,7 @@ header::after {
 }
 
 /* logo design */
+header { padding-top: 8px; }
 #logo { margin-left: 24px; }
 #logo img { width: 32px; border-radius: 22.5%; vertical-align: text-bottom; }
 #logo h1 { display: inline; font-size: 32px; margin: 0; margin-left: 12px; }
@@ -44,10 +45,9 @@ footer {
     color: rgb(110, 110, 115);
     background-color: #f5f5f7;
     text-align: center;
-    font-weight: lighter;
-    font-family: Helvetica, sans-serif;
+    font-weight: 300;
     letter-spacing: 1px;
-    padding: 10px;
+    padding: 4px;
 }
 </style>
 </head>
@@ -76,8 +76,6 @@ footer {
     </p>
   </main>
 
-  <footer>
-    © 2022 QualityIsMatters
-  </footer>
+  <footer>© 2022 QualityIsMatters</footer>
 </body>
 </html>
