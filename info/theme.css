@@ -12,12 +12,13 @@ main { flex: 1; }
 /* stick header at top */
 header { position: sticky; top: 0; }
 
+/* fix height of header in order to bugfix scrolling to in page anchor */
+header { height: 78px; }
+html { scroll-padding-top: 78px; }
+
 /********************
  * base theme
  ********************/
-
-/* softer white as bg color */
-body { background-color: rgba(251,251,253); }
 
 /* consider font for zh/en characters */
 body { color: #1d1d1f; font-family: "PingFang TC",sans-serif; }
@@ -48,7 +49,6 @@ footer {
 /* opaque message background */
 header > h1 { background-color: rgba(251,251,253); }
 header > nav > ul { background-color: rgba(251,251,253,0.9); }
-header > aside > p { background-color: #f2f2f2; }
 
 /* no spacing between logo and navigation */
 /* underscore after navigation */
@@ -57,15 +57,15 @@ header > aside > p { background-color: #f2f2f2; }
 header > h1 { margin: 0; }
 header > nav > ul { margin: 0; }
 header > nav::after { display: block; content: ""; background-color: rgba(0,0,0,0.16); height: 1px; }
-header > aside > p { margin: 1px 0 0 0; }
 
 /* logo design */
 header > h1 { padding: 8px 24px 0 24px; }
-header > h1 > img { border-radius: 22.5%; }
+header > h1 img { border-radius: 22.5%; }
+header > h1 a { text-decoration: none; color: inherit; }
 
 /* adjust logo image and spacing according to zh characters */
 header > h1 { letter-spacing: 2px; }
-header > h1 > img { margin-right: 8px; width: 45px; vertical-align: text-top; }
+header > h1 img { margin-right: 8px; width: 45px; vertical-align: text-top; }
 
 /* convert ul (unodered list) into inline text */
 /* padding right as same as logo */
@@ -76,17 +76,17 @@ header > nav > ul > li { padding-left: 32px; }
 header > nav > ul > li > a { text-decoration: none; color: #3c3c3c; opacity: .88; }
 header > nav > ul > li > a:hover { color: #06c; opacity: 1; }
 
-/* append box shadow after message */
-header > aside > p { box-shadow: 0px 2px 2px #bbb; }
+/********************
+ * announcement
+ ********************/
 
-/* message is expected 3 lines within padding */
-header > aside > p { padding: 8px 24px; }
-/* TODO */
-/*
-header > aside > p {
-    text-overflow: ellipsis;
-    height: 64px;
-    overflow: hidden;
-    white-space: nowrap;
+/* fixed position at the bottom and centralized */
+#announcement { position: fixed; bottom: 0; left: 0; margin: 16px; }
+
+/* design the dialog */
+#announcement {
+    border-radius: 16px;
+    background-color: #f2f2f2;
+    padding: 16px;
+    box-shadow: 0px 0px 8px #999;
 }
-*/
