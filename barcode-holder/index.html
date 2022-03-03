@@ -1,0 +1,10 @@
+<script>
+let destination;
+for (const lang of ["en", "zh"])
+    if (navigator.language.startsWith(lang))
+        destination = `./${lang}.html`;
+if (destination === undefined)
+    destination = `./en.html`;
+
+window.location.replace(destination);
+</script>
